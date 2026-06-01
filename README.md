@@ -27,4 +27,4 @@ A responsive **Student Registration System** built with **HTML, CSS, and JavaScr
 ## Notes
 - The app stores data under `localStorage` key: `studentRecords`.
 - The UI uses semantic sections and responsive breakpoints (mobile/tablet/desktop).
-
+🔗 **Project Repository:** [Click here to view on GitHub](https://github.com/Rsgr172026/Student-Registration-System-2)
