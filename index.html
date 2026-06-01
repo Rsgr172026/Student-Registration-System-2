@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A robust Student Registration System to add, edit, delete, and persist student records using local storage.">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Student Registration System</h1>
+        <p>Manage, track, and update student records seamlessly. All data persists locally in your browser.</p>
+    </header>
+
+    <main class="app-container">
+        <section class="form-section">
+            <h2>Register New Student</h2>
+            <form id="registrationForm" novalidate>
+                <input type="hidden" id="editStudentId" value="">
+
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" placeholder="e.g., John Doe" required>
+                    <small class="error-msg" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" placeholder="e.g., 10123" required>
+                    <small class="error-msg" id="idError"></small>
+                </div>
