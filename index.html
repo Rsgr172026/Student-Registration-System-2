@@ -31,3 +31,44 @@
                     <input type="text" id="studentId" placeholder="e.g., 10123" required>
                     <small class="error-msg" id="idError"></small>
                 </div>
+
+                div class="form-group">
+                    <label for="emailId">Email ID</label>
+                    <input type="email" id="emailId" placeholder="e.g., john@example.com" required>
+                    <small class="error-msg" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactNo">Contact Number</label>
+                    <input type="tel" id="contactNo" placeholder="e.g., 9876543210" required>
+                    <small class="error-msg" id="contactError"></small>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn btn-submit">Register Student</button>
+            </form>
+        </section>
+
+        <section class="display-section">
+            <h2>Registered Records</h2>
+            <div class="table-wrapper" id="tableWrapper">
+                <table class="records-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recordsTableBody">
+                        </tbody>
+                </table>
+                <div id="noDataMessage" class="no-data">No student records found.</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
